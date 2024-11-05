@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animaciones.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+</head>
+<body>
+   
+    <form class="form__container" id="container-login" novalidate>
+        <div class="caja-login">
+        <p class="form__title">Iniciá Sesión en BM!</p>
+
+        <div class="form_field">
+            <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+        </div>
+
+        <div class="form_field">
+            <input type="password" placeholder="Password" class="form__input" id="password" autocomplete="off" />
+        </div>
+
+        <small id="form__error"></small>
+        <input type="submit" class="btn-send" value="Iniciar Sesión" />
+        <p class="form-redirect">¿No tenés cuenta? <a href="./registro.html">Registrate</a>
+        </p>
+        </div>
+    </form>
+    <script src="inicio.js"></script>
+</body>
+</html>

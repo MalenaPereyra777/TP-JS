@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+   <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+   <link rel="stylesheet" href="./assets/css/animaciones.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+   integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+
+        <img class="logo" src="./assets/img/BMlogoblanco.png" alt="logo">
+        <nav class="navbar">
+           <div class="menu-label">
+            <img class="menu-icon" src="./assets/img/MenuB.png" alt="menu">
+           </div>
+        
+    
+            <ul class="navbar-list">
+                <li><a href="#clothes">Home</a></li>
+                <li><a href="#informacion">Info</a></li>
+                <li><a href="#summer">SS24</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="https://www.instagram.com/blossomindd/" target="_blank">Instagram</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/Inicio.html" target="_blank">Iniciar sesión</a></li>
+                <li><a href="/registro.html" target="_blank">Registrarse</a></li>
+            </ul> 
+
+        
+        <div class="cart-label">
+            <i class="fa-sharp fa-solid fa-cart-shopping">
+                <div class="cart-bubble">0</div>
+            </i>
+
+        </div>
+
+              <div class="cart">
+
+                <h2>Tus productos</h2>
+
+                <div class="cart-container">
+
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$22.500 ARS</span>
+                  </div>
+        
+                  <button class="btn-shop">Comprar</button>
+                  <button class="btn-delete">Vaciar carrito</button>
+              </div>
+                  <div class="overlay"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="clothes">
+          <div class="clothes-info">
+            <h1>Encuentra el mejor estilo para ti</h1>
+            <p>
+            En Blossom Indumentaria podes encontrar el estilo que estas buscando para la temporada de verano 2024. 
+            </p>
+            <a href="#products">SHOP NOW</a>
+          </div>
+          <div class="clothes-card">
+            <img class="modelo" src="./assets/img/model1.jpg" alt="Presentacion">
+          </div>
+        </section>
+        <section id="informacion">
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/img/local_shipping_FILL0_wght400_GRAD0_opsz24.svg" alt="Envio">
+                    <h3>Envio Gratis</h3>
+                    <p>En compras superiores a $30.000</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/credit_card_FILL0_wght400_GRAD0_opsz24.svg" alt="Pagos">
+                    <h3>Cuotas</h3>
+                    <p>Hasta 3 cuotas sin interés</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/lock_FILL0_wght400_GRAD0_opsz24.svg" alt="Seguridad">
+                    <h3>Compra con seguridad</h3>
+                    <p>Tus datos personales siempre protegidos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="summer">
+            <h2>Colección verano 2024</h2>
+            <div class="summer-container">
+                <div class="imagen-grid"></div>
+                <div class="imagen-grid"></div>
+                <div class="imagen-grid"></div>
+                <div class="imagen-grid"></div>
+                <div class="imagen-grid"></div>
+                <div class="imagen-grid"></div>
+            </div>
+        </section>
+
+        <section id="fashion">
+            <div class="fashion-card">
+                <img class="model" src="./assets/img/set3.jpg" alt="modelo">
+            </div>
+            <div class="fashion-info">
+                <h2>La mejor moda desde 2020</h2>
+                <p>
+                Blossom Indumentaria es un emprendimiento elaborado con pasión y cariño. Te queremos ayudar a ser tu mejor versión!
+                </p>
+                <a href="#products">SEE MORE</a>
+              </div>
+        </section>
+        <section id="products">
+            <h2>Categorías</h2>
+            <div class="categories">
+                <button class="category active">All</button>
+                <button class="category" data-category="SS24">SS24</button>
+                <button class="category" data-category="Sets">Sets</button>
+                <button class="category" data-category="Dresses">Dresses</button>
+                <button class="category" data-category="Tops">Tops</button>
+                <button class="category" data-category="Bottoms">Bottoms</button>
+            </div>
+
+            <!-- hacer cards con datajs -->
+            <div class="products-container">
+               
+            </div>
+            <button class="btn-load">Ver más productos</button>
+        </section>
+        <section id="contacto">
+                <div class="contacto-info">
+                    <h2>Contactate con nosotros</h2>
+                    <p>Ingresa tu email y nuestro equipo se pondrá en contacto contigo</p>
+                </div>
+
+                <!-- validar formulario con js -->
+                <div class="contacto-formulario">
+                    <label for="email"></label>
+                    <input id="email" type="text" placeholder="Tu email">
+                    <button class="btn-send">Enviar</button>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="footer-links">
+                <li><a href="#">Términos de compra</a></li>
+                <li><a href="#">Política de cambios</a></li>
+                <li><a href="https://www.instagram.com/blossomindd/">Contactanos</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
