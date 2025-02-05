@@ -62,7 +62,7 @@ const checkTextInput=(input) =>{
         return;
     }
     if(!isBetween(input,minCharacters,maxCharacters)){
-        showError(input,`Este campo debe tener entre ${minCharacters} y ${maxCharacters} caracteres`);
+        showError(input,`Ingresa entre ${minCharacters} y ${maxCharacters} caracteres`);
         return;
     }
 
@@ -85,7 +85,7 @@ const checkEmail = (input)=>{
     }
 
     if (isExistingEmail(input)){
-        showError(input,"El email ya se encuentra registrado");
+        showError(input,"El email ya está registrado");
         return;
     }
 
@@ -103,7 +103,7 @@ const checkPassword= (input) =>{
         return;
     }
     if(!isPasswordSecure(input)){
-        showError(input,"La contraseña debe contener al menos 8 caracteres, una mayuscula, una minuscula y un simbolo");
+        showError(input,"Ingrese 8 caracteres, una mayuscula, una minuscula y un simbolo");
         return;
     }
     showSuccess(input);

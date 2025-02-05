@@ -690,6 +690,7 @@ main{
     border: 1px solid var(--secondary);
     padding: 8px;
     margin: 10px 0px;
+    width: 350px;
 }
 
 .form-redirect a {

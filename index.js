@@ -279,8 +279,8 @@ const isExistingCartProduct = (product) => {
 }
 
 const createProductData= (product) => {
-  const {id,name,bid,img} = product;
-  return {id,name,bid,img};
+  const {id,name,price,img} = product;
+  return {id,name,price,img};
 };
 
 const showSuccessModal = (msg) => {
